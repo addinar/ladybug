@@ -1,6 +1,6 @@
 # Ladybug Travel Assistant
 
-Ladybug is a Python-based travel assistant that helps you find the best driving, public transit, and walking routes between two locations. It uses the Google Maps API and OpenAI's GPT 3.5 model.
+Ladybug is a Python-based travel assistant that helps you find the best driving, public transit, and walking routes between two locations. It uses the Google Maps API and OpenAI's GPT 3.5 model. Run main.py to get results.
 
 # TO-DO:
 - [x] configure AI

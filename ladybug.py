@@ -28,8 +28,19 @@ class Ladybug:
         url = f'https://maps.googleapis.com/maps/api/directions/json?destination={destination}&origin={origin}&key={key}'
         response = requests.get(url)
         data = response.json()
+        self.remove_polylines(data)
         data = json.dumps(data)
         return data
+
+    def remove_polylines(self, data):
+        routes = data["routes"]
+        for route in routes:
+            legs = route["legs"]
+            for leg in legs:
+                steps = leg["steps"]
+                for step in steps:
+                    if "polyline" in step:
+                        del step["polyline"]
 
     def answer_query(self, origin, destination):
         route = self.get_route(origin, destination)

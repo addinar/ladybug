@@ -5,8 +5,8 @@ import json
 
 class Ladybug:
     def __init__(self):
-        self.google_key = 'AIzaSyDG6M9ROdWak3ml8YGeoHKdgR_ZAi81zgg'
-        self.open_ai_key = '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'
+        self.google_key = # Insert Google Maps Directions API key here
+        self.open_ai_key = # Insert OpenAI API key here
 
     def run_task(self):
         print("Hi! I'm a ladybug, your travel assistant. Enter your origin and destination.\n")

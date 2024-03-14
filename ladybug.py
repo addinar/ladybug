@@ -6,10 +6,10 @@ import json
 class Ladybug:
     def __init__(self):
         self.google_key = 'AIzaSyDG6M9ROdWak3ml8YGeoHKdgR_ZAi81zgg'
-        self.open_ai_key = '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'
+        self.open_ai_key = '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'
 
     def run_task(self):
-        print("Hi! I'm a ladybug, your travel assistant. Enter your origin, destination, and preferred mode of travel.\n")
+        print("Hi! I'm a ladybug, your travel assistant. Enter your origin and destination.\n")
         origin = input("Origin: ")
         print('\n')
         destination = input("Destination: ")
@@ -54,7 +54,7 @@ class Ladybug:
             messages=[
                 {
                     "role": "user",
-                    "content": "Provide the best driving, public transit, and walking routes."
+                    "content": "Provide the best driving, public transit, and walking routes. If international or transcontinental, provide airline routes."
                 },
                 {
                     "role": "system",

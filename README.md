@@ -31,3 +31,4 @@ If looking for an airline route from Harlem to Koreatown internationally, it wou
 # Note
 
 Please note that the accuracy and reliability of the route suggestions provided by the Ladybug travel assistant depends on the data and algorithms used by the Google Maps API and OpenAI's GPT-3 model.
+In addition, an ipynb file is attached if you wish to use that instead.

@@ -23,7 +23,7 @@ class Ladybug:
         origin = origin.replace(" ", "+")
         origin = origin.replace(",", "%2C")
         destination = destination.replace(" ", "+")
-        destination = destination.replace(" ", "%2C")
+        destination = destination.replace(",", "%2C")
         key = self.google_key
         url = f'https://maps.googleapis.com/maps/api/directions/json?destination={destination}&origin={origin}&key={key}'
         response = requests.get(url)
